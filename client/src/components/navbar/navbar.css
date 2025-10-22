@@ -1,0 +1,248 @@
+#navWrapper {
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 100;
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8.3rem;
+  align-items: center;
+  font-weight: normal;
+}
+.nav-left {
+  height: auto;
+  cursor: pointer;
+}
+.logo {
+  width: clamp(8.25rem, 15vw, 9.375rem);
+  height: auto;
+  cursor: pointer;
+}
+
+.ham {
+  display: none;
+  z-index: 101;
+}
+.ham button {
+  background: none;
+  border: none;
+  font-size: clamp(1.5rem, 4vw, 1.875rem);
+  cursor: pointer;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(1rem, 4vw, 2.5rem);
+  margin: 0;
+  padding: 0;
+  font-size: clamp(0.875rem, 2vw, 1.125rem);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.homeList {
+  cursor: pointer;
+}
+.active {
+  color: #f99106;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.signupBtn {
+  background: #f99106;
+  border-radius: 1.875rem;
+  color: white;
+  border: none;
+  padding: 1rem 4.125rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+.searchIcon {
+  width: 1.5rem;
+}
+
+nav ul li {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+nav ul a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+nav ul li:hover {
+  color: #f99106;
+  transform: translateY(-2px);
+}
+.btns span:hover,
+.searchIcon:hover,
+.signupBtn:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.cart-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.cart-icon {
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.cart-icon:hover {
+  color: #007bff;
+}
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 3px 5px;
+  border-radius: 50%;
+  line-height: 1;
+  min-width: 18px;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .ham {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+  .homeList.show {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .btns {
+    display: none;
+    font-size: 2rem;
+  }
+  .signupBtn {
+    font-size: 1.5rem;
+  }
+  nav {
+    padding: 2rem 4rem;
+  }
+
+  .homeList.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 6rem;
+    gap: 2rem;
+    left: 0;
+    font-size: 1.5rem;
+    width: 100%;
+    align-items: center;
+    background: white;
+  }
+  .btns.show {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    top: 20.5rem;
+    padding: 2rem 0;
+    left: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    align-items: center;
+    background: white;
+  }
+  .searchIcon {
+    cursor: pointer;
+    width: 2rem;
+  }
+}
+@media (max-width: 375px) {
+  .btns.show {
+    top: 20.7rem;
+  }
+}
+@media (max-width: 1024px) and (min-width: 767px) {
+  nav {
+    padding: 2rem 5.3rem;
+  }
+  .homeList.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 6.5rem;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    background: white;
+    padding-bottom: 2rem;
+  }
+  .btns {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-icon {
+    font-size: 2rem; /* slightly bigger cart icon */
+  }
+
+  .cart-badge {
+    font-size: 0.8rem;
+    min-width: 20px;
+    top: -8px;
+    right: -12px;
+    padding: 4px 6px;
+  }
+}
+
+/* ✅ Mobile */
+@media (max-width: 425px) {
+  .cart-icon {
+    font-size: 2.3rem; /* even bigger icon for touch */
+  }
+
+  .cart-badge {
+    font-size: 1rem;
+    min-width: 22px;
+    top: -10px;
+    right: -14px;
+    padding: 5px 7px;
+  }
+}
+
+/* ✅ Small Mobile (like 320px) */
+@media (max-width: 375px) {
+  .cart-icon {
+    font-size: 2.5rem;
+  }
+
+  .cart-badge {
+    font-size: 1.1rem;
+    min-width: 24px;
+    top: -4px;
+    right: -16px;
+    padding: 4px 2px;
+  }
+}
