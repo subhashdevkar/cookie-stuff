@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import ReviewCard from "../reviewCards/ReviewCard";
 import reviewData from "../../data/ReviewsData.js";
-import "../reviewsSection/reviewSection.css";
+import "../reviewsSection/ReviewSection.css";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const SwiperSlider = () => {
