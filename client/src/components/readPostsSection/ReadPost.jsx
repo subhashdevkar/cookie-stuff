@@ -1,5 +1,5 @@
 import Postcard from "../postCard/Postcard";
-import "./readPost.css";
+import "./ReadPost.css";
 import { useSelector } from "react-redux";
 
 const ReadPost = () => {

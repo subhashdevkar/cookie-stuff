@@ -21,7 +21,7 @@ import AddCircleIcon from "@mui/icons-material/AddCircle";
 import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import "./cartModal.css";
+import "./CartModal.css";
 import {
   decreamentCartApi,
   increamentCartApi,
