@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { useLocation } from "react-router";
-import { GlobalContext } from "../GlobalContext/GlobalContext.js";
+import { GlobalContext } from "../globalContext/GlobalContext.js";
 
 const SinglePostPage = () => {
   const location = useLocation();
