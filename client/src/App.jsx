@@ -1,8 +1,5 @@
-import React from "react";
 import Home from "./pages/Home";
 import { Route, Routes, ScrollRestoration } from "react-router";
-import Navbar from "./components/navbar/Navbar";
-import ContactUs from "./components/contactUs/ContactUs";
 import ContactUsPage from "./pages/ContactPage";
 import AllCourses from "./pages/AllCourses";
 import PostsPage from "./pages/PostsPage";
@@ -13,10 +10,7 @@ import CourseDetails from "./pages/CourseDetails";
 import RegisterPage from "./pages/RegisterPage";
 import LoginPage from "./pages/LoginPage";
 import { Toaster } from "react-hot-toast";
-import Footer from "./components/footer/Footer";
 import Layout from "./components/Layout";
-import { Elements } from "@stripe/react-stripe-js";
-import PaymentForm from "./components/paymentForm/PaymentForm";
 import PaymentPage from "./pages/PaymentPage";
 import PaymentStatusPage from "./pages/PaymentStatusPage";
 
