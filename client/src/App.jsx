@@ -4,7 +4,7 @@ import ContactUsPage from "./pages/ContactPage";
 import AllCourses from "./pages/AllCourses";
 import PostsPage from "./pages/PostsPage";
 import SinglePostPage from "./pages/SinglePostPage";
-import GlobalContextProvider from "./globalContext/GlobalContextProvider";
+import GlobalContextProvider from "./GlobalContext/GlobalContextProvider";
 import ScrollToTop from "./components/ScrollToTop";
 import CourseDetails from "./pages/CourseDetails";
 import RegisterPage from "./pages/RegisterPage";
