@@ -1,7 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/footer/Footer";
-import CartModal from "../components/navbar/CartModal";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Card from "../components/card/Card";
 

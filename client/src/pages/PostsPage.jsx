@@ -1,9 +1,5 @@
-import React from "react";
 import Postcard from "../components/postCard/Postcard";
-import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/footer/Footer";
 import { useSelector } from "react-redux";
-import CartModal from "../components/navbar/CartModal";
 
 const PostsPage = () => {
   const posts = useSelector((state) => state.product.postData);

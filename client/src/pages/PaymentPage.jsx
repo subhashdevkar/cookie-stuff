@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import PaymentForm from "../components/paymentForm/PaymentForm";
 import { loadStripe } from "@stripe/stripe-js";

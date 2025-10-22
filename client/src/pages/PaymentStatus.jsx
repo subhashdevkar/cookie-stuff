@@ -1,5 +1,5 @@
 import { useStripe } from "@stripe/react-stripe-js";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 const PaymentStatus = () => {
   const stripe = useStripe();

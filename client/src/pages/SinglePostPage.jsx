@@ -1,9 +1,6 @@
-import React, { useContext } from "react";
-import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/footer/Footer";
+import { useContext } from "react";
 import { useLocation } from "react-router";
-import { GlobalContext } from "../globalContext/globalContext";
-import CartModal from "../components/navbar/CartModal";
+import { GlobalContext } from "../GlobalContext/GlobalContext.js";
 
 const SinglePostPage = () => {
   const location = useLocation();

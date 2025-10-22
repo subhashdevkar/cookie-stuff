@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Navbar from "../components/navbar/Navbar";
+import { useState } from "react";
 import registerLogo from "../assets/registerLogo.png";
 import registerBg from "../assets/registerbg.png";
 import googleImg from "../assets/google.png";
